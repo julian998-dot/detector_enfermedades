@@ -23,7 +23,7 @@ Despues de este entrenamiento ejeceutaremos:
 $ python3 onnx_export.py --model-dir=models/plantas/
 ```
 Finalmente haciendo uso de `jetson.inference.detectNet()` como se muestra en el repositorio de [HelloAI](https://github.com/dusty-nv/jetson-inference) mediante comandos de linux.
-Pero para tener mayor control del sistema se implementa de la siguiente manera:
+Pero para tener mayor control del sistema en un script de python se implementa de la siguiente manera:
 
 - Instanciando la red:
 ```
