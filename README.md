@@ -2,7 +2,7 @@
 # **Tesis de grado del programa de ingenieria en mecatronica.**
 
 - Bajo el uso de una tarjeta NVIDIA Jetson TX1 4GB se hara una deteccion y clasificacion de enfermades en plantas de papa.
-- El modelo sera mediante SDD optimizado con TensorRT [TRT]
+- El modelo sera mediante SDD optimizado con NVIDIA TensorRT [TRT]
 - Una vez detectada la enfermedad usando ROS (Robot Operating System) se enviaran señales para mover los actuadores y aspersores para tratar la planta en el robot CERES.
 ## Dataset
 El dataset se tomo en el campus de la universidad, con ayuda de docentes de horticultura se planto una parcela de 24x24 plantas indivuduales de papa, estas separadas de tal forma que el robot pueda entrar y mirar de a dos lineas de cultivo al tiempo.
