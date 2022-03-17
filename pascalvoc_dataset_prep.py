@@ -73,7 +73,7 @@ print('Se leyó un total de: ',str(cant_imags),' imagenes y ',str(cant_xml),' an
 
 annotation_dir = os.path.join('data','mi_dataset','Annotations')
 imageset_dir = os.path.join('data','mi_dataset','ImageSets','Main')
-jpegimages_dir = os.path.join('data','mi_dataset','JPGImages')
+jpegimages_dir = os.path.join('data','mi_dataset','JPEGImages')
 
 voc_dir = []
 voc_dir.append(annotation_dir)
