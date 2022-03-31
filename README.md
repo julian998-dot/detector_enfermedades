@@ -1,5 +1,5 @@
 # *UNIVERSIDAD MILITAR NUEVA GRANADA*
-# **Tesis de grado del programa de ingenieria en mecatronica.**
+# **Tesis de pregrado del programa de ingenieria en mecatronica.**
 
 - Bajo el uso de una tarjeta NVIDIA Jetson TX1 4GB se hara una deteccion y clasificacion de enfermades en plantas de papa.
 - El modelo sera mediante SDD optimizado con NVIDIA TensorRT [TRT]
