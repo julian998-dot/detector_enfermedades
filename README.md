@@ -10,6 +10,9 @@ El dataset se tomo en el campus de la universidad, con ayuda de docentes de hort
 Con la toma de datos se obtuvieron un total de 422 imagenes, siguiendo la pipeline de la genracion de un modelo de inteligencia artificial para deteccion de objetos(OD), se colocó labels([usando labelimg](https://tzutalin.github.io/labelImg/)) a todas estas imagenes de esta manera:
 ![Image text](https://github.com/julian998-dot/detector_enfermedades/blob/main/ignore/labeling_sample.jpeg)
 Teniendo en cuenta que todo el formato de labeling esta en *PascalVOC*, lo que no es mas que un archivo .xml con la informacion de los BBOXES.
+
+* Igualmente no se descarta una posibilidad de utilizar un clasificador de imagenes con infenrencia TensorRT en lugar del Object Detector, esto debido a la dificultad de entreamiento, ademas de que por como esta estructurado el robot CERES es mas sencillo y practico utilizar el clasificador de imagenes.
+* Ya se tienen 3 Modelos SSD Mobilenet v1 para OD.
 ## En la JetsonTX1
 
 Antes que nada revisaar la documentacion de dusty_nv para las [NVIDIA JETSON](https://github.com/dusty-nv/jetson-inference) para [transfer learning en SSD Mobilenet.](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-ssd.md)
