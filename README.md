@@ -45,7 +45,7 @@ net = jetson.inference.detectNet(argv=NETWORK)
 Como se muestra en la carpeta en este repositorio de codigos de la jetson.
 Cabe recalcar que el modelo usado para el SSD, ES EL SSD-Mobilenet-300 con backbone de Mbilnenet, como ve:
 
-## Image Clasification
+## Image Classification
 Revisar documentacion de dusty_nv para [Image Classification](https://github.com/dusty-nv/jetson-inference/blob/master/docs/imagenet-camera.md)
 Se entran entrenando los modelos:
 - Googlenet
