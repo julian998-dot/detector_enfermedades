@@ -12,6 +12,9 @@ Con la toma de datos se obtuvieron un total de 422 imagenes, siguiendo la pipeli
 Teniendo en cuenta que todo el formato de labeling esta en *PascalVOC*, lo que no es mas que un archivo .xml con la informacion de los BBOXES.
 - [Dataset para Object Detection](https://www.kaggle.com/datasets/juliancortes2/potato-leaf-disease-pascal-voc) en kaggle.
 - [Dataset para Image Classification](https://www.kaggle.com/datasets/juliancortes2/potato-disease-img-classif) en kaggle.
+- [Modelos de IC Y OD](https://drive.google.com/drive/folders/1d9LU0QUzlrc7GFfrI9ZlOxZnBm81Ozwk?usp=sharing)
+
+
 * Igualmente no se descarta una posibilidad de utilizar un clasificador de imagenes con infenrencia TensorRT en lugar del Object Detector, esto debido a la dificultad de entreamiento, ademas de que por como esta estructurado el robot CERES es mas sencillo y practico utilizar el clasificador de imagenes.
 * Ya se tienen 3 Modelos SSD Mobilenet v1 para OD.
 ## En la JetsonTX1
