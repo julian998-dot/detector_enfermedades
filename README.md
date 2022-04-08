@@ -48,11 +48,11 @@ net = jetson.inference.detectNet(argv=NETWORK)
 
 ```
 Como se muestra en la carpeta en este repositorio de codigos de la jetson.
-Cabe recalcar que el modelo usado para el SSD, ES EL SSD-Mobilenet-300 con backbone de Mbilnenet, como ve:
+Cabe recalcar que el modelo usado para el SSD, ES EL SSD-Mobilenet-300 con backbone de Mobilnenet, como ve:
 ![Image text](https://github.com/julian998-dot/detector_enfermedades/blob/main/ignore/SSD_MOBILENETV1.drawio.png)
 ## Image Classification
 Revisar documentacion de dusty_nv para [Image Classification](https://github.com/dusty-nv/jetson-inference/blob/master/docs/imagenet-camera.md)
-Se entran entrenando los modelos:
+Se estarán entrenando los modelos:
 - Googlenet
 - ResNet-18
 - ResNet-101
