@@ -17,7 +17,7 @@ Teniendo en cuenta que todo el formato de labeling esta en *PascalVOC*, lo que n
 
 * Igualmente no se descarta una posibilidad de utilizar un clasificador de imagenes con infenrencia TensorRT en lugar del Object Detector, esto debido a la dificultad de entreamiento, ademas de que por como esta estructurado el robot CERES es mas sencillo y practico utilizar el clasificador de imagenes.
 * Ya se tienen 3 Modelos SSD Mobilenet v1 para OD.
-## En la JetsonTX1
+## Object Detection
 
 Antes que nada revisaar la documentacion de dusty_nv para las [NVIDIA JETSON](https://github.com/dusty-nv/jetson-inference) para [transfer learning en SSD Mobilenet.](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-ssd.md)
 
@@ -40,5 +40,26 @@ NETWORK = [f'--model={model_dir}',f'--labels={labels_dir}','--input-blob=input_0
 - Llamandola con `argv`:
 ```
 net = jetson.inference.detectNet(argv=NETWORK)
+
 ```
 Como se muestra en la carpeta en este repositorio de codigos de la jetson.
+Cabe recalcar que el modelo usado para el SSD, ES EL SSD-Mobilenet-300 con backbone de Mbilnenet, como ve:
+
+## Image Clasification
+Revisar documentacion de dusty_nv para [Image Classification](https://github.com/dusty-nv/jetson-inference/blob/master/docs/imagenet-camera.md)
+Se entran entrenando los modelos:
+- Googlenet
+- ResNet-18
+- ResNet-101
+- DenseNet-121
+
+Se optó por entrenar la red en la JETSON, usando el comando:
+```
+$ python3 train.py --model-dir=modeldir data/data/ --arch=model_name --batch-size=8 --epochs=35
+```
+Despues de este entrenamiento ejeceutaremos:
+```
+$ python3 onnx_export.py --model-dir=models/plantas/
+```
+Ya solo falta correr la red y tendremos el modelo corriendo con TRT.
+Vease codigos JETSON en Image Classifiaction en este repo.
